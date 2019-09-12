@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.GetMapping;
  * Created by uc on 9/12/2019
  */
 @Controller
-public class IndexController {
+public class VetController {
 
-    @GetMapping({"", "/", "/index", "/index.html"})
-    public String index() {
-        return "index";
+    @GetMapping({"/vets", "/vets/index", "/vets/index.html"})
+    public String listVets() {
+        return "vets/index";
     }
 }
